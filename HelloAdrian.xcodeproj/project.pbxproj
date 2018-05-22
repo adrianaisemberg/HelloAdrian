@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		723C4F5E20D0F4AA285B0EE9 /* Pods_HelloAdrian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC42D821F9434F14142F40F /* Pods_HelloAdrian.framework */; };
 		7A9942B320B484BD00CAE0E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9942B220B484BD00CAE0E4 /* AppDelegate.swift */; };
 		7A9942B520B484BD00CAE0E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9942B420B484BD00CAE0E4 /* ViewController.swift */; };
 		7A9942B820B484BD00CAE0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9942B620B484BD00CAE0E4 /* Main.storyboard */; };
 		7A9942BA20B484BD00CAE0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9942B920B484BD00CAE0E4 /* Assets.xcassets */; };
 		7A9942BD20B484BD00CAE0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9942BB20B484BD00CAE0E4 /* LaunchScreen.storyboard */; };
+		7AD051FD20B4873B00F90F4D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7AD051FC20B4873B00F90F4D /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		7A9942B920B484BD00CAE0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A9942BC20B484BD00CAE0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A9942BE20B484BD00CAE0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD051FC20B4873B00F90F4D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7DC42D821F9434F14142F40F /* Pods_HelloAdrian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloAdrian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91EB02532A4F3FDF82F8C5BF /* Pods-HelloAdrian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAdrian.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAdrian/Pods-HelloAdrian.debug.xcconfig"; sourceTree = "<group>"; };
+		DD6CE7F936DCC36F5D228B59 /* Pods-HelloAdrian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAdrian.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAdrian/Pods-HelloAdrian.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				723C4F5E20D0F4AA285B0EE9 /* Pods_HelloAdrian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FDE73DA00823BFD48FFEDD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91EB02532A4F3FDF82F8C5BF /* Pods-HelloAdrian.debug.xcconfig */,
+				DD6CE7F936DCC36F5D228B59 /* Pods-HelloAdrian.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69D6511A702FF4ABBA987B85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DC42D821F9434F14142F40F /* Pods_HelloAdrian.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A9942A620B484BD00CAE0E4 = {
 			isa = PBXGroup;
 			children = (
+				7AD051FC20B4873B00F90F4D /* Podfile */,
 				7A9942B120B484BD00CAE0E4 /* HelloAdrian */,
 				7A9942B020B484BD00CAE0E4 /* Products */,
+				3FDE73DA00823BFD48FFEDD1 /* Pods */,
+				69D6511A702FF4ABBA987B85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A9942C120B484BD00CAE0E4 /* Build configuration list for PBXNativeTarget "HelloAdrian" */;
 			buildPhases = (
+				6854305436ADAF56620DB869 /* [CP] Check Pods Manifest.lock */,
 				7A9942AB20B484BD00CAE0E4 /* Sources */,
 				7A9942AC20B484BD00CAE0E4 /* Frameworks */,
 				7A9942AD20B484BD00CAE0E4 /* Resources */,
@@ -125,11 +153,33 @@
 			files = (
 				7A9942BD20B484BD00CAE0E4 /* LaunchScreen.storyboard in Resources */,
 				7A9942BA20B484BD00CAE0E4 /* Assets.xcassets in Resources */,
+				7AD051FD20B4873B00F90F4D /* Podfile in Resources */,
 				7A9942B820B484BD00CAE0E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6854305436ADAF56620DB869 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloAdrian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A9942AB20B484BD00CAE0E4 /* Sources */ = {
@@ -272,6 +322,7 @@
 		};
 		7A9942C220B484BD00CAE0E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91EB02532A4F3FDF82F8C5BF /* Pods-HelloAdrian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +338,7 @@
 		};
 		7A9942C320B484BD00CAE0E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6CE7F936DCC36F5D228B59 /* Pods-HelloAdrian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
