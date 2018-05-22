@@ -124,7 +124,7 @@
 				TargetAttributes = {
 					7A9942AE20B484BD00CAE0E4 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -325,12 +325,15 @@
 			baseConfigurationReference = 91EB02532A4F3FDF82F8C5BF /* Pods-HelloAdrian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = EMS457U755;
 				INFOPLIST_FILE = HelloAdrian/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adrianai.HelloAdrian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14cda4f0-55d8-4a50-a968-bd2b18d5122e";
+				PROVISIONING_PROFILE_SPECIFIER = "Adrian's 4";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,12 +344,15 @@
 			baseConfigurationReference = DD6CE7F936DCC36F5D228B59 /* Pods-HelloAdrian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = EMS457U755;
 				INFOPLIST_FILE = HelloAdrian/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adrianai.HelloAdrian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14cda4f0-55d8-4a50-a968-bd2b18d5122e";
+				PROVISIONING_PROFILE_SPECIFIER = "Adrian's 4";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
